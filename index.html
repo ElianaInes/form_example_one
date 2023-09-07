@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FORMULARIO</title>
+</head>
+<body>
+
+    <main class="contenido-principal contenedor">
+        <h2 class="textcenter">CONTACTO</h2>
+
+        <form action="" class="formulario">
+            <fieldset>
+                <legend>Tus datos</legend>
+                <div class="campo">
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text">
+                </div>
+                <div class="campo">
+                    <label for="Asunto">Asunto</label>
+                    <input type="text" name="Asunto" id="Asunto">
+                </div>
+                <div class="campo">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div class="campo">
+                    <label for="telefono">Telefono</label>
+                    <input type="number" name="Telefono" id="Telefono">
+                </div>
+                <div class="campo">
+                    <label for="Mensajo">Mensaje</label>
+                    <textarea name="" id="" cols="20" rows="10"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>País</legend>
+                <div class="campo">
+                    <label for="pais">País</label>
+                    <select id="pais">
+                        <option value="">-- Seleccione -- </option>
+                        <option value="MX">México</option>
+                        <option value="PR">Perú</option>
+                        <option value="CO">Colombia</option>
+                        <option value="AR">Argentina</option>
+                        <option value="ES">España</option>
+                        <option value="CL">Chile</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion extra</legend>
+                <div class="campo">
+                    <label for="Proveedor">Cliente</label>
+                    <input type="radio" name="tipo" id="cliente" value="Cliente">
+                </div>
+
+                <div class="campo">
+                    <label for="Proveedor">Proveedor</label>
+                    <input type="radio" name="tipo" id="Proveedor" value="Proveedor">
+                </div>
+
+                <div class="campo">
+                    <label for="categoria">Categoria de Interes</label>
+                    <input list="categoria" name="categoria">
+                    <datalist id="categorias">
+                        <option value="cocina"></option>
+                        <option value="exterior"></option>
+                        <option value="recamaras"></option>
+                        <option value="oficina"></option>
+                        <option value="television"></option>
+                    </datalist>
+
+                </div>
+
+            </fieldset>
+
+            <input class="boton" type="submit" value="Enviar Formulario">
+
+        
+        </form>
+
+    </main>
+    
+    
+</body>
+</html>
